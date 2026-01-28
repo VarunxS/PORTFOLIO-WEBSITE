@@ -1,7 +1,9 @@
 import { Resend } from 'resend';
 
 // Initialize Resend with API key from environment
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY
+    ? new Resend(process.env.RESEND_API_KEY)
+    : null;
 
 interface SendEmailParams {
     to: string;
@@ -17,8 +19,8 @@ export async function sendEmail({
     from = 'Portfolio <noreply@varunsingla.com>'
 }: SendEmailParams) {
     // If no API key is set (e.g. dev without env), we log instead of failing hard
-    if (!process.env.RESEND_API_KEY) {
-        console.log('--- MOCK EMAIL SEND ---');
+    if (!resend) {
+        console.log('--- MOCK EMAIL SEND (Missing API Key) ---');
         console.log(`To: ${to}`);
         console.log(`Subject: ${subject}`);
         console.log('--- END MOCK EMAIL ---');

@@ -147,6 +147,7 @@ export interface CaseStudy {
     industry?: string;
     coverImage: string;
     thumbnail?: string;
+    role?: string;
     context?: string;
     challenge?: string;
     approach?: string;

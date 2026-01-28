@@ -258,7 +258,7 @@ export const CaseStudyForm = ({ initialData }: CaseStudyFormProps) => {
                 label="PDF Download (Optional)"
                 accept="application/pdf"
                 maxSizeMB={10}
-                currentFile={formData.pdfUrl}
+                currentFile={formData.pdfUrl || undefined}
                 onUpload={(url) => setFormData(prev => ({ ...prev, pdfUrl: url }))}
             />
 

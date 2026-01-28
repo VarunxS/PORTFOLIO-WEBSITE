@@ -1,52 +1,9 @@
-'use client';
-
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { Input, Textarea, Button } from '@/components/ui/Base';
 import { FadeIn } from '@/components/animations/Animations';
-import { Mail, Linkedin, Github, CheckCircle, AlertCircle } from 'lucide-react';
-import { useState } from 'react';
+import { Mail, Linkedin } from 'lucide-react';
 
 export default function ContactPage() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        company: '',
-        subject: '',
-        message: ''
-    });
-    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-    const [errorMessage, setErrorMessage] = useState('');
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setStatus('loading');
-        setErrorMessage('');
-
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
-            });
-
-            const data = await response.json();
-
-            if (!response.ok) {
-                throw new Error(data.error || 'Failed to submit form');
-            }
-
-            setStatus('success');
-            setFormData({ name: '', email: '', company: '', subject: '', message: '' });
-        } catch (error: any) {
-            setStatus('error');
-            setErrorMessage(error.message);
-        }
-    };
 
     return (
         <main className="min-h-screen bg-navy-900">
@@ -60,7 +17,7 @@ export default function ContactPage() {
                         <div className="lg:col-span-5 text-white">
                             <FadeIn>
                                 <h1 className="font-heading text-5xl md:text-6xl mb-8">
-                                    Let's Connect
+                                    Contact
                                 </h1>
                                 <p className="text-xl text-gray-300 font-light leading-relaxed mb-12">
                                     I am currently open to internship opportunities in Investment Banking,
@@ -106,93 +63,27 @@ export default function ContactPage() {
                             </FadeIn>
                         </div>
 
-                        {/* Right Column: Form */}
                         <div className="lg:col-span-7">
                             <FadeIn delay={0.2}>
-                                <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl">
-                                    {status === 'success' ? (
-                                        <div className="text-center py-12">
-                                            <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                                                <CheckCircle size={32} />
-                                            </div>
-                                            <h3 className="font-heading text-3xl text-navy-900 mb-4">Message Sent</h3>
-                                            <p className="text-gray-600 mb-8">
-                                                Thank you for reaching out. I'll get back to you shortly.
-                                            </p>
-                                            <Button variant="outline" onClick={() => setStatus('idle')}>
-                                                Send Another Message
-                                            </Button>
-                                        </div>
-                                    ) : (
-                                        <form onSubmit={handleSubmit} className="space-y-6">
-                                            <h3 className="font-heading text-2xl text-navy-900 mb-6">Send a Message</h3>
+                                <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl flex flex-col items-center justify-center text-center min-h-[400px]">
+                                    <div className="w-20 h-20 bg-navy-50 rounded-full flex items-center justify-center mb-8 text-navy-900">
+                                        <Mail size={40} />
+                                    </div>
+                                    <h3 className="font-heading text-3xl text-navy-900 mb-4">Get in Touch</h3>
+                                    <p className="text-gray-600 mb-8 max-w-md mx-auto leading-relaxed">
+                                        I prefer direct communication via email or phone for faster response times.
+                                        Please reach out using the details below.
+                                    </p>
 
-                                            {status === 'error' && (
-                                                <div className="bg-red-50 text-red-600 p-4 rounded-md flex items-center text-sm">
-                                                    <AlertCircle size={16} className="mr-2" />
-                                                    {errorMessage}
-                                                </div>
-                                            )}
-
-                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                                <Input
-                                                    label="Name"
-                                                    name="name"
-                                                    value={formData.name}
-                                                    onChange={handleChange}
-                                                    required
-                                                    placeholder="John Doe"
-                                                />
-                                                <Input
-                                                    label="Email"
-                                                    name="email"
-                                                    type="email"
-                                                    value={formData.email}
-                                                    onChange={handleChange}
-                                                    required
-                                                    placeholder="john@company.com"
-                                                />
-                                            </div>
-
-                                            <Input
-                                                label="Company (Optional)"
-                                                name="company"
-                                                value={formData.company}
-                                                onChange={handleChange}
-                                                placeholder="Organization Name"
-                                            />
-
-                                            <Input
-                                                label="Subject"
-                                                name="subject"
-                                                value={formData.subject}
-                                                onChange={handleChange}
-                                                required
-                                                placeholder="Inquiry about..."
-                                            />
-
-                                            <Textarea
-                                                label="Message"
-                                                name="message"
-                                                value={formData.message}
-                                                onChange={handleChange}
-                                                required
-                                                rows={6}
-                                                placeholder="How can I help you?"
-                                            />
-
-                                            <div className="pt-2">
-                                                <Button
-                                                    type="submit"
-                                                    loading={status === 'loading'}
-                                                    fullWidth
-                                                    size="lg"
-                                                >
-                                                    Send Message
-                                                </Button>
-                                            </div>
-                                        </form>
-                                    )}
+                                    <div className="space-y-4 w-full max-w-xs">
+                                        <a href="mailto:varunsingla608@gmail.com" className="flex items-center justify-center gap-3 p-4 bg-navy-900 text-white rounded-lg hover:bg-navy-800 transition-all font-medium">
+                                            <Mail size={20} />
+                                            <span>Email Me</span>
+                                        </a>
+                                        <a href="tel:+918284082401" className="flex items-center justify-center gap-3 p-4 border border-navy-900 text-navy-900 rounded-lg hover:bg-navy-50 transition-all font-medium">
+                                            <span>Call: +91 8284082401</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </FadeIn>
                         </div>

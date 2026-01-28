@@ -56,9 +56,9 @@ export const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <Button variant="outline" size="sm" className="hidden lg:inline-flex">Resume</Button>
-                    </a>
+                    <Link href="/contact" className="ml-4 hidden lg:inline-flex">
+                        <Button variant="outline" size="sm" className="hidden lg:inline-flex">+91 8284082401</Button>
+                    </Link>
                 </nav>
 
                 {/* Mobile Toggle */}
@@ -84,8 +84,8 @@ export const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <Button variant="outline" size="md">View Resume</Button>
+                    <a href="tel:+918284082401">
+                        <Button variant="outline" size="md">Call: +91 8284082401</Button>
                     </a>
                 </div>
             </div>

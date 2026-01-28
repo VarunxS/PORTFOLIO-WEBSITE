@@ -21,7 +21,7 @@ export const Hero = () => {
                             Operational Excellence.
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-700 max-w-2xl font-body leading-relaxed text-left">
-                            Business Analyst specializing in data-driven decision making and process automation for financial services.
+                            Business Analyst specializing in n8n automations, AI-driven financial modeling, and operational process optimization.
                         </p>
                     </motion.div>
 

@@ -2,7 +2,6 @@ import { Hero } from '@/components/sections/Hero';
 import { FeaturedWork } from '@/components/sections/FeaturedWork';
 import { CaseStudyShowcase } from '@/components/sections/CaseStudyShowcase';
 import { LeadershipTimeline } from '@/components/sections/LeadershipTimeline';
-import { ContactCTA } from '@/components/sections/ContactCTA';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { getProjects, getCaseStudies, getLeadership } from '@/lib/data';
@@ -30,7 +29,6 @@ export default function Home() {
 
       <LeadershipTimeline positions={leadership} />
 
-      <ContactCTA />
 
       <Footer />
     </main>

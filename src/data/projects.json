@@ -1,15 +1,20 @@
 [
   {
-    "title": "Event-Driven AI Support & Decision Routing System",
+    "title": "n8n & AI: Event-Driven Customer Support System",
     "slug": "event-driven-ai-support-decision-routing-system",
-    "description": "An event-driven AI system that classifies incoming customer messages, retrieves contextual knowledge using vector search, and generates consistent, automated responses through agent-based reasoning.",
-    "longDescription": "Context\nHandling customer communication at scale is not a tooling problem — it is a\ndecision problem. Incoming messages vary in intent, urgency, relevance, and\nrequired context, yet most systems rely on either manual handling or rigid,\nrule-based automation.\n\nThis results in wasted effort, inconsistent responses, and poor reuse of\norganizational knowledge.\n\nWhat I Built\nI designed an event-driven AI support intelligence system that treats every\nincoming message as a decision to be evaluated, not a ticket to be processed.\n\nThe system listens to live communication channels (email and chat), determines\nwhether a message actually requires attention, retrieves the right internal\ncontext when needed, and generates structured responses using an AI agent —\nwithout hard-coded rules or static workflows.\n\nHow the System Works in Practice\nWhen a message arrives:\n- It is first classified to understand intent and relevance\n- Non-actionable or low-signal messages are filtered out early\n- Relevant queries trigger contextual retrieval from internal documents\n- An AI agent reasons over both the message and retrieved context\n- The final response is generated and sent automatically, with memory retained\n  for future interactions\n\nEach step exists to reduce unnecessary AI calls, control behavior, and keep the\nsystem predictable rather than “chatty”.\n\nDesign Decisions That Matter\nThis system was intentionally designed around control and clarity:\n- Classification is used to avoid blindly responding to everything\n- Vector retrieval replaces brittle rule-based logic\n- AI is treated as a reasoning layer, not a decision-maker\n- Routing logic is explicit, not hidden inside prompts\n- Components are modular to allow reuse across other workflows\n\nThe result is a system that behaves consistently, scales cleanly, and remains\nauditable.\n\nWhy This Is Useful Beyond Support\nWhile implemented in a customer support context, the same architecture applies\nto:\n- Internal operations queries\n- Research and document-heavy workflows\n- Finance and reporting support systems\n- Consulting-style analysis pipelines\n- Any environment where inputs must be evaluated before action\n\nThis project demonstrates how AI can be embedded into real decision workflows\nwithout turning the system into a black box.\n",
-    "category": "AI, Automation, Decision Intelligence",
+    "description": "An event-driven n8n automation system that classifies incoming customer messages, retrieves contextual knowledge using vector search, and generates consistent, automated responses.",
+    "longDescription": "Context\nHandling customer communication at scale is not a tooling problem — it is a\ndecision problem. Incoming messages vary in intent, urgency, relevance, and\nrequired context, yet most systems rely on either manual handling or rigid,\nrule-based automation.\n\nThis results in wasted effort, inconsistent responses, and poor reuse of\norganizational knowledge.\n\nWhat I Built\nI designed an event-driven AI support intelligence system using n8n that treats every\nincoming message as a decision to be evaluated, not a ticket to be processed.\n\nThe system listens to live communication channels (email and chat), determines\nwhether a message actually requires attention, retrieves the right internal\ncontext when needed, and generates structured responses using an AI agent —\nwithout hard-coded rules or static workflows.\n\nHow the System Works in Practice\nWhen a message arrives:\n- It is first classified to understand intent and relevance\n- Non-actionable or low-signal messages are filtered out early\n- Relevant queries trigger contextual retrieval from internal documents\n- An AI agent reasons over both the message and retrieved context\n- The final response is generated and sent automatically, with memory retained\n  for future interactions\n\nEach step exists to reduce unnecessary AI calls, control behavior, and keep the\nsystem predictable rather than “chatty”.\n\nDesign Decisions That Matter\nThis system was intentionally designed around control and clarity:\n- Classification is used to avoid blindly responding to everything\n- Vector retrieval replaces brittle rule-based logic\n- AI is treated as a reasoning layer, not a decision-maker\n- Routing logic is explicit, not hidden inside prompts\n- Components are modular to allow reuse across other workflows\n\nThe result is a system that behaves consistently, scales cleanly, and remains\nauditable.\n\nWhy This Is Useful Beyond Support\nWhile implemented in a customer support context, the same architecture applies\nto:\n- Internal operations queries\n- Research and document-heavy workflows\n- Finance and reporting support systems\n- Consulting-style analysis pipelines\n- Any environment where inputs must be evaluated before action\n\nThis project demonstrates how AI can be embedded into real decision workflows\nwithout turning the system into a black box.\n",
+    "category": "n8n Automation, AI Agents, Decision Intelligence",
     "imageUrl": "/uploads/Customer Support System-1769614188640-624806464.png",
     "date": "2026-01-28",
-    "tags": [],
+    "tags": [
+      "n8n",
+      "AI",
+      "Automation"
+    ],
     "status": "published",
     "metrics": {},
+    "featured": true,
     "id": "1769611007542",
     "createdAt": "2026-01-28T14:36:47.542Z",
     "updatedAt": "2026-01-28T15:29:50.798Z"
@@ -25,6 +30,7 @@
     "tags": [],
     "status": "published",
     "metrics": {},
+    "featured": true,
     "id": "1769614277519",
     "createdAt": "2026-01-28T15:31:17.519Z",
     "updatedAt": "2026-01-28T15:31:17.519Z"

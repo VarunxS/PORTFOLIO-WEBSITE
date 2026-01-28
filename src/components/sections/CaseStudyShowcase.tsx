@@ -38,19 +38,6 @@ export const CaseStudyShowcase = ({ caseStudy }: CaseStudyShowcaseProps) => {
                                 {caseStudy.subtitle}
                             </p>
 
-                            {/* Key Metric Highlight */}
-                            <div className="mb-10 py-6 border-t border-b border-gray-100">
-                                {Object.entries(caseStudy.metrics).slice(0, 1).map(([key, value]) => (
-                                    <div key={key}>
-                                        <span className="block text-4xl font-light text-navy-900 mb-1">
-                                            {value}
-                                        </span>
-                                        <span className="text-xs text-gray-500 uppercase tracking-wide">
-                                            {key.replace(/([A-Z])/g, ' $1').trim()}
-                                        </span>
-                                    </div>
-                                ))}
-                            </div>
 
                             <div>
                                 <Link href={`/case-studies/${caseStudy.slug}`}>

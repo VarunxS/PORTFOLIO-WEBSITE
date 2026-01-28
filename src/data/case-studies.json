@@ -1,0 +1,75 @@
+[
+    {
+        "id": "1",
+        "slug": "food-delivery-valuation",
+        "title": "Strategic Valuation Analysis",
+        "subtitle": "Financial modeling and growth strategy for quick-commerce leader",
+        "client": "Leading Food Delivery & Quick Commerce Platform",
+        "industry": "E-commerce & Technology",
+        "coverImage": "/images/case-studies/food-delivery-cover.jpg",
+        "thumbnail": "/images/case-studies/food-delivery-thumb.jpg",
+        "context": "A rapidly growing food delivery platform expanding into quick-commerce needed comprehensive financial analysis to understand its valuation dynamics and inform strategic growth decisions. The company was experiencing strong revenue growth but facing questions about sustainable unit economics and optimal expansion strategies.",
+        "challenge": "The key challenges included:\n\n1. Building a robust DCF model that captured quick-commerce economics\n2. Analyzing valuation gap between intrinsic value and market cap\n3. Benchmarking against competitors in a fast-evolving market\n4. Synthesizing insights from 1,200+ industry documents efficiently\n5. Developing actionable strategic recommendations balancing growth and profitability",
+        "approach": "I employed a multi-faceted analytical approach:\n\n1. **Financial Modeling**: Built a detailed DCF model incorporating:\n   - Revenue projections across food delivery and quick-commerce segments\n   - Unit economics analysis at category level\n   - Operating leverage assumptions\n   - Terminal value calculations\n\n2. **AI-Assisted Research**: Used GenAI tools to analyze 1,200+ documents including:\n   - Industry reports and market studies\n   - Competitor financial statements\n   - Regulatory filings\n   - News and market commentary\n   This reduced research time by 90% while maintaining analytical rigor.\n\n3. **Competitor Benchmarking**: Comprehensive analysis of key metrics across major players\n\n4. **Strategic Framework**: SWOT analysis and scenario planning",
+        "solution": "Delivered a comprehensive analysis package including:\n\n1. **DCF Valuation Model**:\n   - Enterprise Value: ₹72,035 Cr\n   - Equity Value: ₹66,376 Cr\n   - Sensitivity analysis across key assumptions\n\n2. **Valuation Analysis**:\n   - Identified 4.3x premium of market cap (₹2.9 Lakh Cr) over intrinsic value\n   - Attributed premium to quick-commerce growth expectations and market positioning\n\n3. **Strategic Recommendations**:\n   - Balanced growth strategy prioritizing unit economics\n   - Margin optimization initiatives\n   - Category expansion in high-frequency segments\n   - Capital allocation framework\n\n4. **Executive Presentation**: 40-slide deck in consulting format",
+        "outcome": "The analysis delivered significant value:\n\n- **Actionable Insights**: Clear framework for strategic decision-making\n- **Time Efficiency**: 90% reduction in research time through AI assistance\n- **Comprehensive Coverage**: Analysis of 1,200+ industry documents\n- **Strategic Clarity**: Identified key value drivers and growth levers\n\nThe valuation framework and strategic recommendations provided a robust foundation for growth planning and investor communications.",
+        "metrics": {
+            "enterpriseValue": "₹72,035 Cr",
+            "equityValue": "₹66,376 Cr",
+            "marketCap": "₹2.9 Lakh Cr",
+            "documents": "1,200+",
+            "timeReduction": "90%"
+        },
+        "timeline": "3 months",
+        "tools": [
+            "Excel",
+            "Python",
+            "PowerPoint",
+            "GenAI",
+            "Financial Modeling"
+        ],
+        "pdfUrl": null,
+        "featured": true,
+        "orderIndex": 1,
+        "status": "published",
+        "createdAt": "2024-02-01T00:00:00.000Z",
+        "updatedAt": "2024-02-01T00:00:00.000Z"
+    },
+    {
+        "id": "2",
+        "slug": "ops-automation-transformation",
+        "title": "Operations Automation Transformation",
+        "subtitle": "GenAI-powered platform reducing manual workload by 70%",
+        "client": "Mid-Market SaaS Company",
+        "industry": "Technology & Software",
+        "coverImage": "/images/case-studies/ops-automation-cover.jpg",
+        "thumbnail": "/images/case-studies/ops-automation-thumb.jpg",
+        "context": "A growing SaaS company was struggling with operational inefficiencies in customer support and finance operations. The support team was overwhelmed with ticket volume, while the finance team spent significant time on manual invoice processing and data entry.",
+        "challenge": "Key operational challenges:\n\n1. **Support Bottleneck**: 200+ daily support tickets with average 4-hour response time\n2. **Manual Processing**: Invoice data entry taking 15+ hours per week\n3. **Compliance Risk**: Inconsistent responses to policy-related queries\n4. **Scaling Constraints**: Operations costs growing faster than revenue\n5. **Data Silos**: Customer data scattered across multiple systems",
+        "approach": "Designed and implemented a comprehensive GenAI automation platform:\n\n1. **Intelligent Ticket Routing**:\n   - Developed 5-label LLM intent classification system\n   - Categories: Technical, Billing, Account, Product, Compliance\n   - RAG-based policy-grounded response generation\n\n2. **Invoice Automation Pipeline**:\n   - OCR for document scanning\n   - LLM extraction of 9+ financial fields\n   - Automatic validation and error handling\n   - Integration with Google Sheets and accounting system\n\n3. **Workflow Orchestration**:\n   - n8n for end-to-end automation\n   - Pinecone vector database for policy knowledge\n   - Google Gemini for natural language processing",
+        "solution": "Deployed a production-ready automation platform with:\n\n**Support Automation**:\n- Automatic ticket classification and routing\n- Suggested responses based on company policies\n- First-response time reduced to 10-15 seconds\n- Human-in-the-loop for complex cases\n\n**Finance Automation**:\n- Automated invoice data extraction (9+ fields)\n- 95% accuracy rate with validation checks\n- Auto-sync to Google Sheets and data warehouse\n- Exception handling for edge cases\n\n**Integration & Monitoring**:\n- Real-time dashboards for operations metrics\n- Alert system for errors or low confidence cases\n- Continuous learning from human corrections",
+        "outcome": "Transformational operational improvements:\n\n- **70-80% Workload Reduction**: Freed up equivalent of 2 FTEs\n- **10-15 Second Response Time**: From 4-hour average\n- **95% Accuracy**: In automated data extraction\n- **60-75% Faster Reconciliation**: Finance close cycle reduced\n- **Improved Compliance**: All responses policy-grounded\n- **Scalability**: Operations now scale sub-linearly with growth\n\nThe platform enabled the company to handle 3x ticket volume without additional headcount while improving response quality and consistency.",
+        "metrics": {
+            "workloadReduction": "70-80%",
+            "responseTime": "10-15 sec",
+            "accuracy": "95%",
+            "reconciliationTime": "60-75% faster",
+            "fields": "9+"
+        },
+        "timeline": "4 months",
+        "tools": [
+            "n8n",
+            "Google Gemini",
+            "Pinecone",
+            "OCR",
+            "Python",
+            "Google Sheets"
+        ],
+        "pdfUrl": null,
+        "featured": false,
+        "orderIndex": 2,
+        "status": "published",
+        "createdAt": "2024-01-15T00:00:00.000Z",
+        "updatedAt": "2024-01-15T00:00:00.000Z"
+    }
+]

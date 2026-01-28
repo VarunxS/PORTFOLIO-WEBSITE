@@ -1,0 +1,80 @@
+[
+    {
+        "id": "1",
+        "title": "Joint Placement Head",
+        "organization": "Career Development & Guidance Cell, PEC",
+        "type": "Academic",
+        "startDate": "2024-08-01T00:00:00.000Z",
+        "endDate": null,
+        "current": true,
+        "description": "Leading placement initiatives and industry partnerships for 800+ students at Punjab Engineering College. Driving strategic outreach, managing placement data and analytics, and building Excel and Power BI dashboards to support planning and decision-making.",
+        "achievements": [
+            {
+                "text": "Driving outreach and industry/alumni networking to expand internship and placement opportunities",
+                "metric": null
+            },
+            {
+                "text": "Managing placement data and insights for strategic planning",
+                "metric": "800+ students"
+            },
+            {
+                "text": "Building Excel and Power BI dashboards for placement analytics and reporting",
+                "metric": null
+            }
+        ],
+        "orderIndex": 1,
+        "createdAt": "2024-08-01T00:00:00.000Z"
+    },
+    {
+        "id": "2",
+        "title": "Management Head",
+        "organization": "NASA HERC Team, PEC",
+        "type": "Management",
+        "startDate": "2023-09-01T00:00:00.000Z",
+        "endDate": "2024-05-31T00:00:00.000Z",
+        "current": false,
+        "description": "Led strategic planning, fundraising, and cross-department collaboration for PEC's Mars Rover Project under the NASA Human Exploration Rover Challenge. Secured significant funding and managed national-level project execution.",
+        "achievements": [
+            {
+                "text": "Raised funding for PEC's Mars Rover Project",
+                "metric": "₹20 Lakhs"
+            },
+            {
+                "text": "Led strategic planning and sponsor outreach for national-level competition",
+                "metric": null
+            },
+            {
+                "text": "Coordinated cross-department collaboration involving technical, design, and operations teams",
+                "metric": null
+            }
+        ],
+        "orderIndex": 2,
+        "createdAt": "2023-09-01T00:00:00.000Z"
+    },
+    {
+        "id": "3",
+        "title": "Executive Member",
+        "organization": "Robotics Society, PEC",
+        "type": "Technical",
+        "startDate": "2023-06-01T00:00:00.000Z",
+        "endDate": "2024-05-31T00:00:00.000Z",
+        "current": false,
+        "description": "Orchestrated robotics competitions and AI technical sessions while mentoring junior students in robotics, AI strategy, and project execution. Managed technical and cultural events for the college community.",
+        "achievements": [
+            {
+                "text": "Orchestrated robotics competitions and AI technical sessions",
+                "metric": "3+ events, 100+ participants"
+            },
+            {
+                "text": "Mentored junior students in robotics, AI strategy, and project execution",
+                "metric": "15+ mentees"
+            },
+            {
+                "text": "Coordinated technical and cultural events as event coordinator",
+                "metric": "8+ events, 200+ attendees"
+            }
+        ],
+        "orderIndex": 3,
+        "createdAt": "2023-06-01T00:00:00.000Z"
+    }
+]

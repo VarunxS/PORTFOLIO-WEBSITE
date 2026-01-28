@@ -1,0 +1,113 @@
+[
+  {
+    "id": "1",
+    "slug": "genai-ops-automation",
+    "title": "GenAI Ops Automation Platform",
+    "category": "AI Automation",
+    "description": "Built a GenAI-powered automation platform for customer support and finance ops, reducing manual workload by 70-80%",
+    "longDescription": "Built a comprehensive GenAI-powered automation platform that transformed customer support and finance operations. The platform leverages n8n automation, Google Gemini for natural language understanding, and Pinecone for RAG-based policy grounding.\n\nKey components include:\n- 5-label LLM intent classification for automated ticket routing\n- RAG-based response generation grounded in company policies\n- OCR + LLM invoice processing pipeline extracting 9+ financial fields\n- Automatic synchronization with Sheets and data warehouses\n\nThe system reduced first-response time to 10-15 seconds while improving compliance and cutting reconciliation time by 60-75%.",
+    "imageUrl": "/images/projects/genai-ops.jpg",
+    "tags": [
+      "n8n",
+      "Google Gemini",
+      "Pinecone",
+      "RAG",
+      "OCR",
+      "Automation"
+    ],
+    "metrics": {
+      "reduction": "70-80%",
+      "accuracy": "95%",
+      "responseTime": "10-15 sec",
+      "reconciliationTime": "60-75%"
+    },
+    "date": "2024-01-15T00:00:00.000Z",
+    "featured": true,
+    "orderIndex": 1,
+    "status": "published",
+    "createdAt": "2024-01-15T00:00:00.000Z",
+    "updatedAt": "2024-01-15T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "slug": "food-delivery-financial-analysis",
+    "title": "Food Delivery Sector Financial Analysis",
+    "category": "Financial Analysis",
+    "description": "Conducted comprehensive DCF valuation and growth strategy analysis for a leading food delivery platform",
+    "longDescription": "Performed an in-depth financial valuation and strategic analysis for a leading food delivery platform, supported by GenAI-assisted research across 1,200+ industry documents.\n\nKey deliverables:\n- DCF valuation model (Enterprise Value: ₹72,035 Cr; Equity Value: ₹66,376 Cr)\n- Benchmarking against ₹2.9 Lakh Cr market cap\n- Competitor analysis and SWOT assessment\n- Scenario planning and sensitivity analysis\n- Strategic recommendations for margin optimization and category expansion\n\nThe analysis identified key valuation drivers including quick-commerce economics and market positioning, while recommending a balanced growth strategy.",
+    "imageUrl": "/uploads/Screenshot 2025-09-02 at 11.49.27 AM-1769601103093-39824123.png",
+    "tags": [
+      "Excel",
+      "DCF",
+      "Python",
+      "GenAI",
+      "Financial Modeling",
+      "Power Point"
+    ],
+    "metrics": {
+      "valuation": "₹66,376 Cr",
+      "documents": "1,200+",
+      "timeReduction": "90%"
+    },
+    "date": "2023-11-20T00:00:00.000Z",
+    "featured": true,
+    "orderIndex": 2,
+    "status": "published",
+    "createdAt": "2023-11-20T00:00:00.000Z",
+    "updatedAt": "2026-01-28T11:51:46.387Z"
+  },
+  {
+    "id": "3",
+    "slug": "ai-trading-platform",
+    "title": "AI-Powered Market Intelligence Platform",
+    "category": "Product",
+    "description": "Designing LLM-based frameworks for equity analysis across 1,000+ instruments with automated workflows",
+    "longDescription": "Working on an AI-powered market and trading platform that supports data-driven investment decision-making across 1,000+ equity instruments using structured financial data and market signals.\n\nKey features:\n- LLM-based company evaluation frameworks incorporating 10+ fundamental metrics\n- Balance-sheet strength indicators and growth signals\n- Market and news narrative analysis\n- AI-driven market intelligence and decision-support tools\n- Automated end-to-end financial analysis workflows using n8n\n\nThe platform reduces manual analysis effort by 60-70% while improving insight delivery speed and consistency.",
+    "imageUrl": "/images/projects/trading-platform.jpg",
+    "tags": [
+      "LLM",
+      "n8n",
+      "Financial Data",
+      "Market Analysis",
+      "Automation"
+    ],
+    "metrics": {
+      "instruments": "1,000+",
+      "metrics": "10+",
+      "effortReduction": "60-70%"
+    },
+    "date": "2024-03-01T00:00:00.000Z",
+    "featured": false,
+    "orderIndex": 3,
+    "status": "published",
+    "createdAt": "2024-03-01T00:00:00.000Z",
+    "updatedAt": "2024-03-01T00:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "slug": "invoice-processing-automation",
+    "title": "Automated Invoice Processing Pipeline",
+    "category": "AI Automation",
+    "description": "OCR + LLM pipeline for extracting financial data from invoices with 95% accuracy",
+    "longDescription": "Engineered an automated invoice processing pipeline combining OCR and LLM technologies to extract and validate financial data from invoices.\n\nThe pipeline extracts 9+ critical financial fields including:\n- Invoice number and date\n- Vendor information\n- Line items and amounts\n- Tax calculations\n- Payment terms\n\nExtracted data is automatically synchronized into Google Sheets and data warehouses, reducing reconciliation time by 60-75% and achieving 95% accuracy.",
+    "imageUrl": "/images/projects/invoice-processing.jpg",
+    "tags": [
+      "OCR",
+      "LLM",
+      "Google Sheets",
+      "Automation",
+      "Data Processing"
+    ],
+    "metrics": {
+      "fields": "9+",
+      "accuracy": "95%",
+      "timeSaved": "60-75%"
+    },
+    "date": "2023-10-10T00:00:00.000Z",
+    "featured": false,
+    "orderIndex": 4,
+    "status": "published",
+    "createdAt": "2023-10-10T00:00:00.000Z",
+    "updatedAt": "2023-10-10T00:00:00.000Z"
+  }
+]

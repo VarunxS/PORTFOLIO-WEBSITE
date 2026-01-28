@@ -10,7 +10,7 @@ export async function GET() {
 
 export async function POST(request: Request) {
     // Auth check
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const token = cookieStore.get('auth_token');
 
     if (!token || !(await verifyAuth(token.value))) {
@@ -34,7 +34,9 @@ export async function POST(request: Request) {
             current: data.current || false,
             description: data.description || '',
             type: data.type || 'Leadership',
-            achievements: data.achievements || []
+            achievements: data.achievements || [],
+            orderIndex: 0,
+            createdAt: new Date().toISOString()
         };
 
         const currentPositions = getLeadership();

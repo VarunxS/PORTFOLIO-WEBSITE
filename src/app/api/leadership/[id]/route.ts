@@ -23,7 +23,7 @@ export async function PUT(
     props: { params: Promise<{ id: string }> }
 ) {
     const params = await props.params;
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const token = cookieStore.get('auth_token');
 
     if (!token || !(await verifyAuth(token.value))) {
@@ -60,7 +60,7 @@ export async function DELETE(
     props: { params: Promise<{ id: string }> }
 ) {
     const params = await props.params;
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const token = cookieStore.get('auth_token');
 
     if (!token || !(await verifyAuth(token.value))) {
